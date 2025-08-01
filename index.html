@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Frontend Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Simple Frontend!</h1>
+  <button id="clickMeBtn">Click me</button>
+  <div id="message"></div>
+
+  <script>
+    const button = document.getElementById('clickMeBtn');
+    const messageDiv = document.getElementById('message');
+
+    button.addEventListener('click', () => {
+      messageDiv.textContent = 'You clicked the button! 🎉';
+    });
+  </script>
+
+</body>
+</html>
